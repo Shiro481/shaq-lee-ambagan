@@ -179,6 +179,9 @@ header {
   justify-content: center;
   gap:112px;
   flex-wrap: wrap;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,76,42,0.3) 100%);
+  min-height:512px;
 }
 
 .my-img{
@@ -217,5 +220,12 @@ header {
 }
 
 .socials-container{
-  
+  display:flex;
+  align-items: center;
+  gap:20px;
+}
+
+.socials-container i{
+  font-size:24px;
+  color:var(--primaryColor);
 }
