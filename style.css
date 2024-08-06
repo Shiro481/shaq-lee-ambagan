@@ -173,15 +173,49 @@ header {
   border-radius:50px;
 }
 
-/*.resume-btn::before {
-  content: '';
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
-  position: absolute;
-  background-image: linear-gradient(to bottom right, var(--primaryColor), rgba(214, 8, 214, 0.897));
-  border-radius: 50px;
-  top: -5px;
-  left: -5px;
-  z-index: -2;
+.introduction-section{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:112px;
+  flex-wrap: wrap;
 }
-*/
+
+.my-img{
+  max-width:465px;
+  max-height:465px;
+  position:relative;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.me-img{
+  width:100%;
+  border-radius: 50px;
+  
+}
+.introduction-content-container {
+  display: flex;
+  flex-direction: column;
+  gap:28px;
+}
+
+.introduction-content-container p{
+  width:550px;
+  text-align: left;
+}
+
+.introduction-content-container h1{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.introduction-content-container h1 span{
+  color: var(--primaryColor);
+}
+
+.socials-container{
+  
+}
