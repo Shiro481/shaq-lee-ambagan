@@ -348,16 +348,35 @@ header {
 
 @media only screen and (max-width:768px){
   .hamburger-container{
-    display:block;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    position:relative;
+
 
   }
   .bar{
-    display:block;
     width:20px;
-    height:2px;
+    height:3px;
     background-color:white;
-    margin-top:3px;
+    border-radius: 12px;
+    transition:0.4s;
+    position:absolute;
+    transform: translateY(-50%);
    
+  }
+
+  .bar:nth-child(1){
+    top:0;
+  }
+  .bar:nth-child(2){
+    top:45%;
+  }
+  .bar:nth-child(3){
+    bottom:0;
   }
   .nav-menu{
     position:absolute;
@@ -386,5 +405,21 @@ header {
     height:400px;
   }
 
+
+  input:checked + header .hamburger-container .bar:nth-child(1){
+    transform: rotate(45deg);
+    top:40%;
+  }
+  input:checked + header .hamburger-container .bar:nth-child(2){
+    transform: scale(0);
+
+  }
+  
+  input:checked + header .hamburger-container .bar:nth-child(3){
+    transform: rotate(-45deg);
+    bottom:40%;
+ 
+  }
+  
   
 }
