@@ -306,6 +306,57 @@ header {
 
 }
 
+.skills-section{
+  margin-top:60px;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap:wrap;
+  gap:60px;
+}
+
+.skills-section h1{
+  font-size:32px;
+  font-weight:600;
+}
+.skills-container{
+  max-width:1128px;
+  max-height:452px;
+  display:flex;
+  flex-wrap: wrap;
+  gap:16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card{
+  width:364px;
+  height:216px;
+  display: flex;
+  flex-direction: column;
+  padding:20px 40px;
+  justify-content:center;
+  border:2px solid var(--primaryColor);
+  box-sizing:border-box;
+  gap:12px;
+  border-radius: 20px;
+}
+
+.skill-card i{
+  font-size: 36px;
+  color:var(--primaryColor);
+}
+
+.skill-card p{
+  font-size: 12px;
+}
+
+.skill-card h2{
+  font-size: 20px;
+  font-weight: 500;
+}
 
 @media only screen and (max-width: 1140px){
   .introduction-section{
