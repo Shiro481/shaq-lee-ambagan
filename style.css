@@ -338,11 +338,35 @@ header {
   flex-direction: column;
   padding:20px 40px;
   justify-content:center;
-  border:2px solid var(--primaryColor);
   box-sizing:border-box;
   gap:12px;
-  border-radius: 20px;
+  border-radius:19px;
+  border:1px solid rgba(6,82,50,1);
+  position:relative;
+  background-color: black;
+  display:flex;
+  justify-content: center;
 }
+
+.skill-card:hover{
+  border: none;
+}
+
+.skill-card::before{
+  content:'';
+  position:absolute;
+  background-image: var(--primaryColor);
+  width:101.5%;
+  height:101.5%;
+  border-radius: 20px;
+  z-index:-1;
+  align-self: center;
+}
+.skill-card:hover:before{
+  background-image: linear-gradient(var(--primaryColor) 0%, rgba(58,59,103,1) 100%);
+}
+
+
 
 .skill-card i{
   font-size: 36px;
