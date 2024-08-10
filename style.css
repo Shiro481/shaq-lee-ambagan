@@ -606,12 +606,12 @@ header {
   }
   .hero-container h1 {
     font-size: 48px;
-    text-align: left;
+    text-align: center;
   }
   
   .hero-container h2 {
     font-size: 40px;
-    text-align: left;
+    text-align: center;
   }
   
   .hero-container p {
@@ -760,18 +760,18 @@ header {
   }
   .hero-container h1 {
     font-size: 48px;
-    text-align: left;
+    text-align: center;
   }
   
   .hero-container h2 {
     font-size: 40px;
-    text-align: left;
+    text-align: center;
   }
   
   .hero-container p {
     width: 360px;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
   }
   
   .hero-title {
