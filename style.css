@@ -175,7 +175,7 @@ header {
 }
 
 .hero-container h2 {
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .hero-container p {
@@ -366,16 +366,15 @@ header {
   box-sizing:border-box;
   gap:12px;
   border-radius:19px;
-  border:1px solid rgba(6,82,50,1);
+  border:1px solid rgb(0, 105, 53);
   position:relative;
   background-color: black;
   display:flex;
   justify-content: center;
+  transition: 0.3s;
 }
 
-.skill-card:hover{
-  border: none;
-}
+
 
 .skill-card::before{
   content:'';
@@ -386,9 +385,12 @@ header {
   border-radius: 20px;
   z-index:-1;
   align-self: center;
+  transition: 0.5s;
 }
 .skill-card:hover:before{
-  background-image: linear-gradient(var(--primaryColor) 0%, rgba(58,59,103,1) 100%);
+  background-image: linear-gradient(to bottom right, #0CB263, rgba(214, 8, 214, 0.897));
+ 
+  
 }
 
 
