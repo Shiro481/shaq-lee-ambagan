@@ -275,7 +275,7 @@ header {
   flex-wrap: wrap;
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,76,42,0.3) 100%);
-  min-height: 530px;
+  min-height: 590px;
   max-height:800px;
 }
 
