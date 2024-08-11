@@ -71,7 +71,9 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.nav-menu a{
+  text-decoration: none;
+}
 .nav-container a {
   font-size: 16px;
   cursor: pointer;
@@ -81,6 +83,9 @@ header {
 
 .nav-container a:hover{
   color:blueviolet;
+}
+.btn-container a{
+  text-decoration: none;
 }
 
 .contact-btn {

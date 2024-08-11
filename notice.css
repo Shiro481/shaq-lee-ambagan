@@ -1,0 +1,108 @@
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  background-color: black;
+}
+
+header{
+  width:100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap:20px;
+  cursor: pointer;
+
+}
+
+header h1, h2{
+  color: rgb(122, 122, 122);
+}
+
+header h1{
+  font-size:64px;
+}
+
+header h2{
+  font-size:48px;
+  text-align:center ;
+}
+
+header a{
+  text-decoration: none;
+}
+
+header button{
+  padding:16px 44px;
+  border-radius: 50px;
+  border:none;
+  position: relative;
+  background-color: black;
+  color:#0CB263;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+header button span{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#0CB263;
+  z-index:10;
+  font-size: 24px;
+  gap:10px;
+}
+
+header button::before{
+  content:'';
+  width:100%;
+  height:100%;
+  border-radius: 1000px;
+  position: absolute;
+  background:black;
+
+}
+header button::after{
+content:'';
+width:103%;
+height:107%;
+background-image: linear-gradient(to bottom right, #0CB263, rgba(214, 8, 214, 0.897));
+position:absolute;
+border-radius:50px;
+z-index:-1;
+
+}
+
+@media only screen and (max-width:1178px){
+  header h1{
+    font-size: 56px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:320px){
+  header {
+    margin-left:16px;
+    margin-right:16px;
+
+  }
+  header h1{
+    font-size:36px;
+  }
+  header h2{
+    font-size:28px;
+  }
+}
