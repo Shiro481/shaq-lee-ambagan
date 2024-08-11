@@ -150,7 +150,7 @@ header {
  /* -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;*/
-  z-index: -100;
+
 }
 
 .hero-container {
@@ -161,7 +161,7 @@ header {
   justify-content: center;
   flex-direction: column;
   gap: 16px;
-  z-index: -100;
+
 }
 
 .hero-container h1 {
@@ -189,6 +189,12 @@ header {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+.hero-btn-container a{
+  text-decoration: none;
+}
+
+
 .resume-btn{
   padding:16px 44px;
   background-color:black;
@@ -235,6 +241,7 @@ header {
   background:black;
   position:absolute;
   border-radius:50px;
+  cursor:pointer
 
 }
 .resume-btn::before{

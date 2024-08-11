@@ -1,6 +1,5 @@
 
-/*let skillSet = [
-  {
-    icon:""
-  }
-]*/
+
+function sendNotice(){
+  console.log('hello');
+}

@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Shaq Lee Ambagan</title>
 </head>
 <body>
+
+
   <input type="checkbox" id="menu">
   <header>
     <div class="nav-section">
@@ -25,7 +26,7 @@
           <a>Portfolio</a>
         </div>
         <div class="btn-container">
-          <button class="contact-btn"><span>Contact me</span></button>
+          <button class="contact-btn" onclick="alert('Hello')"><span>Contact me</span></button>
         </div>
       </div>
       <label for="menu" class="hamburger-container">
@@ -35,20 +36,19 @@
       </div>
     </label> 
   </header>
-
   <div class="hero-section">
     <div class="hero-container">
       <h1>A<span class="hero-title"> Web Developer</span></h1>
       <h2>based in the Philippines</h2>
       <p>I am self-taught web developer based in the Philippines. I build custom website to elevate your business to the next level.</p>
       <div class="hero-btn-container">
-        <button class="resume-btn"><span>Resume'</span></button>
-        <button class="portfolio-btn"><span>Portfolio</span></button>
+        <a href="notice.html"><button class="resume-btn"><span>Resume</span></button></a>
+        <a href="notice.html"><button class="portfolio-btn"><span>Portfolio</span></button></a>
       </div>
     </div>
   </div>
 
-  <div class="introduction-section">
+ <div class="introduction-section">
     <div class="my-img">
       <img class="me-img" src="images/me.jpg">
     </div>
@@ -104,7 +104,7 @@
       </div>
 
     </div>
-  </div>
+  </div> 
   <script src="index.js"></script>
 </body>
 </html>
