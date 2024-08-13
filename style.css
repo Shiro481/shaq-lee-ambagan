@@ -598,6 +598,9 @@ header {
     gap:20px;
     align-items: center;
   }
+  .contact-title p{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width:768px){
@@ -892,6 +895,52 @@ header {
   flex-wrap:wrap;
   gap:60px;
 }
+.contact-section{
+  display: flex;
+  width:550px;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  margin-top:100px;
+  flex-wrap: wrap;
+}
+
+.contact-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:60px;
+}
+.contact-left{
+  width:55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.contact-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:16px;
+}
+.contact-title{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title h1{
+  font-size: 40px;
+}
+
+
 }
 
 @media only screen and (max-width:375px){
