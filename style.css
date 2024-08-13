@@ -531,6 +531,22 @@ header {
   color: black;
 }
 
+.footer-section {
+  width:100%;
+  min-height:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap:20px;
+}
+
+.footer-section p1{
+  font-weight: bold;
+  color: #0CB263;
+  padding:4px 20px;
+  border-right: 2px solid rgb(73, 73, 73);
+}
 
 
 
@@ -753,7 +769,7 @@ header {
   }
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:540px){
   .hero-section {
     width: 550px;
     max-height: 1000px;
@@ -948,6 +964,16 @@ header {
 .contact-title h1{
   font-size: 40px;
 }
+.footer-section {
+  width:550px;
+  min-height:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap:20px;
+}
+
 
 
 }

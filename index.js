@@ -46,4 +46,16 @@ skillSet.forEach((skill) => {
 // Assuming there's only one .skills-container
 document.querySelector('.skills-container').innerHTML = skillCardContainer;
 
+document.querySelector('.submit-btn').addEventListener('click', submitMessage);
 
+const userName = document.querySelector('.js-name-input');
+const userEmail = document.querySelector('.js-email-input');
+const userMessage = document.querySelector('.js-message-input');
+
+function submitMessage() {
+  if (userName.value.trim() === '' || userEmail.value.trim() === '' || userMessage.value.trim() === '') {
+    alert('ERROR  Message not sent');
+  } else {
+    alert('Message sent successfully');
+  }
+}
