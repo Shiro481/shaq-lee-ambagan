@@ -7,9 +7,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
-  color: white;
+  color: rgb(189, 189, 189);
 }
-input{
+.check-box{
   display:none;
   height:10px;
   width:10px;
@@ -350,7 +350,7 @@ header {
 }
 .skills-container{
   max-width:1128px;
-  max-height:452px;
+  max-height:800px;
   display:flex;
   flex-wrap: wrap;
   gap:16px;
@@ -411,6 +411,120 @@ header {
   font-size: 20px;
   font-weight: 500;
 }
+
+.contact-section{
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  margin-top:100px;
+  flex-wrap: wrap;
+}
+.contact-container{
+  max-width: 1122px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 56px;
+  margin-right: 56px;
+  gap:120px;
+}
+.contact-left{
+  max-width:443px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.contact-left h1{
+  font-size:54px;
+}
+
+.contact-title{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.contact-content{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+.contact-phone, .contact-email{
+  display:flex;
+  flex-direction: rows;
+  gap:8px;
+}
+.contact-phone i, .contact-email i{
+  color:#0CB263;
+  font-size: 16px;
+}
+.contact-socials{
+  display: flex;
+  flex-direction: row;
+  gap:24px;
+}
+.contact-socials i{
+  font-size: 24px;
+  color: #0CB263;
+}
+
+
+.contact-right{
+  min-width:436px;
+  margin-top:60px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-right h3{
+  font-size: 28px;
+
+}
+
+.contact-form{
+  display:flex;
+  flex-direction: column;
+  gap:60px;
+  position: relative;
+}
+.contact-form input,.contact-form textarea{
+  height:40px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--primaryColor);
+  font-size:20px ;
+}
+.contact-form textarea{
+  height:250px;
+  border:none;
+  background-color: #1A1A1A;
+  padding:12px;
+  border-radius:24px;
+}
+.contact-btn-container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:-20px;
+}
+
+.contact-btn-container button{
+  padding:16px 32px;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  border-radius:16px;
+  background-color: #0CB263;
+  color: black;
+}
+
+
+
+
 
 @media only screen and (max-width: 1140px){
   .introduction-section{
