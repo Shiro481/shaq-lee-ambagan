@@ -455,6 +455,8 @@ header {
 .contact-phone, .contact-email{
   display:flex;
   flex-direction: rows;
+  justify-content: center;
+  align-items: center;
   gap:8px;
 }
 .contact-phone i, .contact-email i{
