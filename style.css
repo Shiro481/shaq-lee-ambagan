@@ -100,6 +100,7 @@ header {
   display:flex;
   align-items: center;
   justify-content: center;
+  outline:none;
 }
 .contact-btn span{
   color:white;
@@ -499,6 +500,11 @@ header {
   border-bottom: 1px solid var(--primaryColor);
   font-size:20px ;
   border-radius:0px ;
+  outline:none;
+}
+
+.contact-form input::placeholder,.contact-form textarea::placeholder{
+  color:rgb(46, 46, 46)
 }
 .contact-form textarea{
   height:250px;
