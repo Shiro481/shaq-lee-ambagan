@@ -475,7 +475,7 @@ header {
 .contact-right{
   min-width:436px;
   margin-top:60px;
-  gap: 20px;
+  gap: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -562,6 +562,41 @@ header {
   .introduction-content-container p{
     width:550px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1075px){
+  .contact-container{
+    max-width: 1122px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 56px;
+    margin-right: 56px;
+    gap:60px;
+  }
+  .contact-left{
+    max-width:443px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+  }
+  .contact-title{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
   }
 }
 
