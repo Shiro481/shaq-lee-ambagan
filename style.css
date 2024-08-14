@@ -151,7 +151,6 @@ header {
   background-image: url(images/hero-background.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   align-items: center;
   justify-content: center;
  /* -webkit-background-size:cover;
