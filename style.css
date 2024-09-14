@@ -16,6 +16,12 @@
   z-index: 10000;
   background-color: white;
 }
+html{
+  margin:0;
+  padding:0;
+  min-width:100%;
+  overflow-x: hidden;
+}
 
 body {
   background-color: black;
@@ -36,6 +42,7 @@ body {
 
 /* Header and navigation */
 .nav-section {
+  background-color: transparent;
   width: 100%;
   margin-left: 56px;
   margin-right: 56px;
@@ -192,6 +199,7 @@ header {
 
 .hero-btn-container {
   display: flex;
+  align-self: center;
   width: fit-content;
   flex-wrap: wrap;
   gap: 12px;
@@ -771,7 +779,7 @@ header {
 
 @media only screen and (max-width:540px){
   .hero-section {
-    width: 550px;
+    width: 100%;
     max-height: 1000px;
     display: flex;
     background-image: url(images/hero-background.png);
@@ -798,12 +806,12 @@ header {
     flex-wrap: wrap;
   }
   .hero-container h1 {
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
   }
   
   .hero-container h2 {
-    font-size: 40px;
+    font-size: 28px;
     text-align: center;
   }
   
@@ -824,7 +832,7 @@ header {
     gap: 12px;
   }
   .resume-btn{
-    padding:16px 44px;
+    padding:10px 30px;
     background-color:black;
     border:none;
     border-radius:50px;
@@ -835,30 +843,42 @@ header {
     align-items: center;
     justify-content:center;
     cursor:pointer;
-    
   }
   .resume-btn span{
     z-index: 10;
     color:#0CB263;
+}
 
+.portfolio-btn {
+  padding:12px 38px;
+  background:transparent;
+  border:none;
+  border-radius:50px;
+  font-size:32px;
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  z-index:10;
+  cursor: pointer;
 }
 
 .introduction-section{
-  width:550px;
+  width:100%;
   display:flex;
   align-items: center;
   justify-content: center;
-  gap:112px;
+  gap:80px;
   flex-wrap: wrap;
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,76,42,0.3) 100%);
-  min-height:1100px;
+  min-height:1000px;
 }
 
 
 .my-img{
-  max-width:465px;
-  max-height:465px;
+  max-width:350px;
+  max-height:350px;
   position:relative;
   box-sizing: border-box;
   display:flex;
@@ -912,7 +932,7 @@ header {
 
 .skills-section{
   margin-top:60px;
-  width:550px;
+  width:100%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -922,7 +942,7 @@ header {
 }
 .contact-section{
   display: flex;
-  width:550px;
+  width:100%;
   align-items: center;
   justify-content: center;
   position:relative;
@@ -931,6 +951,7 @@ header {
 }
 
 .contact-container{
+
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -939,12 +960,23 @@ header {
   gap:60px;
 }
 .contact-left{
-  width:55px;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 60px;
+}
+.contact-right{
+  min-width:100%;
+  margin-top:60px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-right h3{
+  font-size: 28px;
+
 }
 .contact-content{
   display: flex;
@@ -965,7 +997,7 @@ header {
   font-size: 40px;
 }
 .footer-section {
-  width:550px;
+  width:100%;
   min-height:60px;
   display:flex;
   align-items: center;
@@ -980,7 +1012,7 @@ header {
 
 @media only screen and (max-width:375px){
   .hero-section {
-    min-width: 5px;
+    min-width: 100%;
     max-height: 1000px;
     display: flex;
     background-image: url(images/hero-background.png);
@@ -1004,16 +1036,16 @@ header {
     flex-direction: column;
     gap: 16px;
     z-index: -100;
-    margin-left:30px;
+
     flex-wrap: wrap;
   }
   .hero-container h1 {
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
   }
   
   .hero-container h2 {
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
   }
   
@@ -1029,16 +1061,17 @@ header {
   
   .hero-btn-container {
     display: flex;
+    align-self: center;
     width: fit-content;
     flex-wrap: wrap;
     gap: 12px;
   }
   .resume-btn{
-    padding:16px 44px;
+    padding:8px 20px;
     background-color:black;
     border:none;
     border-radius:50px;
-    font-size:32px;
+    font-size:24px;
     color:#0CB263;
     position:relative;
     display:flex;
@@ -1051,23 +1084,36 @@ header {
     z-index: 10;
     color:#0CB263;
   }
+
+  .portfolio-btn {
+    padding:8px 20px;
+    background:transparent;
+    border:none;
+    border-radius:50px;
+    font-size:24px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    z-index:10;
+    cursor: pointer;
+  }
   .introduction-section{
-    width:570px;
-    
+    width:100%;
+    height:200px;
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:112px;
+    gap:80px;
     flex-wrap: wrap;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,76,42,0.3) 100%);
-    min-height:px;
   }
   
 
   .my-img{
-    max-width:465px;
-    max-height:465px;
+    max-width:300px;
+    max-height:300px;
     position:relative;
     box-sizing: border-box;
     display:flex;
@@ -1088,7 +1134,7 @@ header {
   }
   
   .introduction-content-container p{
-    width:400px;
+    width:300px;
     text-align: center;
   }
   
@@ -1120,7 +1166,7 @@ header {
   }
   .skills-section{
     margin-top:60px;
-    width:570px;
+    width:100%;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -1135,8 +1181,8 @@ header {
   }
 
   .skill-card{
-    width:200px;
-    height:180px;
+    width:100px;
+    height:90px;
     display: flex;
     flex-direction: column;
     padding:20px 40px;
@@ -1159,7 +1205,8 @@ header {
   }
   
   .skill-card h2{
-    font-size: 16px;
+
+    font-size: 12px;
     font-weight: 500;
     text-align: center;
   }
@@ -1168,5 +1215,28 @@ header {
     font-size: 32px;
     color:var(--primaryColor);
   }
+
+  .footer-section {
+    width:100%;
+    min-height:60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap:20px;
+  }
+  
+  .footer-section p1{
+    font-weight: bold;
+    font-size: 8px;
+    color: #0CB263;
+    padding:4px 20px;
+    border-right: 2px solid rgb(73, 73, 73);
+  }
+
+  .footer-section p2{
+    font-size: 8px;
+  }
+  
 
 }
