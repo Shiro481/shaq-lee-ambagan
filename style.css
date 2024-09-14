@@ -852,7 +852,7 @@ header {
   flex-wrap: wrap;
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,76,42,0.3) 100%);
-  min-height:800px;
+  min-height:1100px;
 }
 
 
@@ -1053,6 +1053,7 @@ header {
   }
   .introduction-section{
     width:570px;
+    
     display:flex;
     align-items: center;
     justify-content: center;
@@ -1060,7 +1061,7 @@ header {
     flex-wrap: wrap;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,76,42,0.3) 100%);
-    min-height:800px;
+    min-height:px;
   }
   
 

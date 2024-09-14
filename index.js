@@ -2,19 +2,19 @@
 
 let skillSet =[
   {
-    icon:'<i class="fa-brands fa-github"></i></i>',
-    title:'Git Veresion Control',
-    description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
+    icon:'<i class="fa-solid fa-music"></i>',
+    title:'Music',
+    description:'I\'ve been always a music-minded person since I was kid. I enjoy listening to different kinds of music, playing musical instruments like guitar, piano, and drums. Music has made a big role in my life.'
   },
   {
-    icon:' <i class="fa-brands fa-app-store-ios"></i>',
-    title:'App Development',
-    description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
+    icon:'<i class="fa-solid fa-tree"></i>',
+    title:'Nature Exploration',
+    description:'When I\'m at my hometown, I would go out almost every afternoon to watch sunsets or go to the mountains and enjoying the view. It\'s like a therapy for me'
   },
   {
     icon:'<i class="fa-solid fa-code"></i>',
     title:'Front-end Development',
-    description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
+    description:'Front-end Development is something I enjoy doing when I have free time. I\'ve been learning HTML, CSS, and JavaScript lately. I\'m trying to improve my skills so that maybe one day I can pursue a web developer career'
   },
   {
     icon:'<i class="fa-brands fa-figma"></i>',
@@ -22,8 +22,8 @@ let skillSet =[
     description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
   },
   {
-    icon:'<i class="fa-solid fa-tags"></i>',
-    title:'Branding',
+    icon:'<i class="fa-solid fa-pen-nib"></i>',
+    title:'Graphic design',
     description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
   },
   {
