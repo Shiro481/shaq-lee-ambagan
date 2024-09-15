@@ -1,0 +1,129 @@
+:root {
+  --primaryColor: #0CB263;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+
+html{
+  margin:0;
+  padding:0;
+  min-width:100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  color: rgb(189, 189, 189);
+  display: block;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+  width:100%;
+
+}
+
+.nav-menu{
+  display:flex;
+  align-items: center;
+  gap:40px;
+
+}
+
+/* Header and navigation */
+.nav-section {
+  background-color: transparent;
+  width: 100%;
+  margin-left: 56px;
+  margin-right: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: black;
+
+
+}
+
+.logo h1 {
+  font-size: 20px;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.nav-section{
+  display:flex;
+  justify-content: space-between;
+}
+.nav-container {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav-menu a{
+  text-decoration: none;
+}
+.nav-container a {
+  font-size: 16px;
+  cursor: pointer;
+  color:white;
+  transition: 0.5s;
+}
+
+.nav-container a:hover{
+  color:blueviolet;
+}
+
+.back-btn a button{
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius:10px;
+  padding: 10px 10px;
+  display: flex;
+  gap:4px;
+  align-items: center;
+}
+
+.back-btn-text, .fa-chevron-left{
+  color:black;
+  font-size: 16px;
+}
+
+.contact-section{
+  margin-top:15px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image{
+  max-width:455px;
+  max-height:455px;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.my-img{
+  width:100%;
+  border-radius:50px;
+}

@@ -58,7 +58,7 @@ header {
   align-items: center;
   justify-content: center;
   position:fixed;
-  background-color: black;
+  background-color:black;
   z-index: 100;
 
 }
@@ -156,10 +156,6 @@ header {
   min-height:900px;
   max-height: 1000px;
   display: flex;
-  background-image: url(images/hero-background.png);
-  background-size: cover;
-  background-position: center;
-  align-items: center;
   justify-content: center;
  /* -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -168,8 +164,11 @@ header {
 }
 
 .hero-container {
+  background-image: url(images/hero-background.png);
+  background-position: center;
+  
   width: 100%;
-  min-height: 748px;
+  min-height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
