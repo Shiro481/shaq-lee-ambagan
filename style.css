@@ -309,6 +309,9 @@ header {
   gap:44px;
 }
 
+.highlight{
+  color:#0CB263;
+}
 .introduction-content-container p{
   width:550px;
   text-align: left;
