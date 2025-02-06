@@ -107,11 +107,13 @@ header {
 }
 
 .contact-section{
-  margin-top:15px;
+  margin-top:184px;
   width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap:72px;
+
 }
 .image{
   max-width:455px;
