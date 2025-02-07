@@ -129,3 +129,56 @@ header {
   width:100%;
   border-radius:50px;
 }
+.infos{
+  height:200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-top h1{
+  color:#0CB263;
+}
+.info-mid{
+  display:flex;
+  flex-direction: column;
+  gap:12px;
+}
+
+.info-mid div{
+  display:flex;
+  gap:8px;
+}
+
+.info-mid div i{
+  color:#0CB263;
+}
+
+.contact-socials{
+  display:flex;
+  gap:12px;
+}
+
+.contact-socials a i{
+  color:#0CB263;
+  font-size: 24px;
+}
+
+.fa-brands{
+  font-size:20px;
+}
+.footer-section {
+  width:100%;
+  min-height:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  gap:20px;
+}
+
+.footer-section p1{
+  font-weight: bold;
+  color: #0CB263;
+  padding:4px 20px;
+  border-right: 2px solid rgb(73, 73, 73);
+}
