@@ -205,6 +205,11 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap:28px;
+}
 .nav-menu a{
   text-decoration: none;
 }
