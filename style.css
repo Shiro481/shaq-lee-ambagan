@@ -1240,5 +1240,145 @@ header {
     font-size: 8px;
   }
   
+}
 
+/* ===== Responsive Breakpoints ===== */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* Navigation */
+  .nav-container a {
+    font-size: 18px;
+  }
+  
+  /* Hero Section */
+  .hero-container h1 {
+    font-size: 48px;
+  }
+  .hero-container p {
+    width: 80%;
+    font-size: 14px;
+  }
+  
+  /* Skills Section */
+  .skill-card {
+    width: 45%;
+    min-width: 200px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Navigation */
+  .nav-menu {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+  }
+  
+  /* Hero Section */
+  .hero-container {
+    min-height: 800px;
+  }
+  .hero-btn-container {
+    flex-direction: row;
+    gap: 24px;
+  }
+  
+  /* Introduction Section */
+  .introduction-section {
+    flex-direction: row;
+    padding: 40px 56px;
+  }
+  .introduction-content-container p {
+    text-align: left;
+  }
+  
+  /* Skills Section */
+  .skill-card {
+    width: 30%;
+  }
+  .skill-card p {
+    display: block;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Hero Section */
+  .hero-container h1 {
+    font-size: 64px;
+  }
+  .hero-container p {
+    width: 60%;
+    font-size: 16px;
+  }
+  
+  /* Introduction Section */
+  .introduction-section {
+    gap: 120px;
+  }
+  
+  /* Contact Section */
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Navigation */
+  .nav-container {
+    gap: 40px;
+  }
+  
+  /* Hero Section */
+  .hero-container {
+    background-size: cover;
+  }
+  
+  /* Skills Section */
+  .skills-container {
+    max-width: 1400px;
+  }
+}
+
+/* XXL devices (larger desktops, 1440px and up) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* ===== Special Cases ===== */
+/* Very small screens (under 400px) */
+@media (max-width: 400px) {
+  .hero-container h1 {
+    font-size: 32px;
+  }
+  .hero-container p {
+    width: 90%;
+  }
+  .skill-card {
+    width: 100%;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 120vh;
+  }
+  .introduction-section {
+    min-height: 100vh;
+  }
+}
+
+/* High density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  .hero-container {
+    background-image: url('images/hero-background@2x.png');
+  }
 }
