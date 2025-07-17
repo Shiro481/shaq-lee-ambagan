@@ -1,61 +1,105 @@
-
-
-let skillSet =[
+// skills-data.js (could be a separate file)
+const skillSet = [
   {
-    icon:'<i class="fa-solid fa-music"></i>',
-    title:'Music',
-    description:'I\'ve been always a music-minded person since I was kid. I enjoy listening to different kinds of music, playing musical instruments like guitar, piano, and drums. Music has made a big role in my life.'
+    id: 1,
+    icon: '<i class="fa-solid fa-music"></i>',
+    title: 'Music',
+    description: 'I\'ve always been music-minded since childhood. I enjoy listening to various genres and playing guitar, piano, and drums.'
   },
   {
-    icon:'<i class="fa-solid fa-tree"></i>',
-    title:'Nature Exploration',
-    description:'When I\'m at my hometown, I would go out almost every afternoon to watch sunsets or go to the mountains and enjoying the view. It\'s like a therapy for me'
+    id: 2,
+    icon: '<i class="fa-solid fa-tree"></i>',
+    title: 'Nature Exploration',
+    description: 'When in my hometown, I enjoy watching sunsets and mountain views as a form of therapy.'
   },
   {
-    icon:'<i class="fa-solid fa-code"></i>',
-    title:'Front-end Development',
-    description:'Front-end Development is something I enjoy doing when I have free time. I\'ve been learning HTML, CSS, and JavaScript lately. I\'m trying to improve my skills so that maybe one day I can pursue a web developer career'
+    id: 3,
+    icon: '<i class="fa-solid fa-code"></i>',
+    title: 'Front-end Development',
+    description: 'I enjoy learning HTML, CSS, and JavaScript in my free time, aiming to pursue a web development career.'
   },
   {
-    icon:'<i class="fa-brands fa-figma"></i>',
-    title:'UI/UX Design',
-    description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
+    id: 4,
+    icon: '<i class="fa-brands fa-figma"></i>',
+    title: 'UI/UX Design',
+    description: 'Passionate about creating intuitive user interfaces and experiences.'
   },
   {
-    icon:'<i class="fa-solid fa-pen-nib"></i>',
-    title:'Graphic design',
-    description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
+    id: 5,
+    icon: '<i class="fa-solid fa-pen-nib"></i>',
+    title: 'Graphic Design',
+    description: 'Experienced in creating visual content and branding materials.'
   },
   {
-    icon:'<i class="fa-solid fa-camera"></i>',
-    title:'Phototgraphy',
-    description:'Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
-  },
+    id: 6,
+    icon: '<i class="fa-solid fa-camera"></i>',
+    title: 'Photography',
+    description: 'Skilled in capturing moments and creating compelling visual stories.'
+  }
 ];
-let skillCardContainer = '';
 
-skillSet.forEach((skill) => {
-  skillCardContainer += `
-    <div class="skill-card">
-      ${skill.icon}
-      <h2>${skill.title}</h2> <!-- Fixed the typo here -->
-      <p>${skill.description}</p>
-    </div>`;
+// Main application
+document.addEventListener('DOMContentLoaded', () => {
+  renderSkills();
+  setupForm();
 });
 
-// Assuming there's only one .skills-container
-document.querySelector('.skills-container').innerHTML = skillCardContainer;
+function renderSkills() {
+  const skillsContainer = document.querySelector('.skills-container');
+  
+  if (!skillsContainer) {
+    console.error('Skills container not found');
+    return;
+  }
 
-document.querySelector('.submit-btn').addEventListener('click', submitMessage);
+  const skillsHTML = skillSet.map(skill => `
+    <div class="skill-card" data-id="${skill.id}">
+      ${skill.icon}
+      <h2>${skill.title}</h2>
+      <p>${skill.description}</p>
+    </div>
+  `).join('');
 
-const userName = document.querySelector('.js-name-input');
-const userEmail = document.querySelector('.js-email-input');
-const userMessage = document.querySelector('.js-message-input');
+  skillsContainer.innerHTML = skillsHTML;
+  addSkillInteractions();
+}
 
-function submitMessage() {
-  if (userName.value.trim() === '' || userEmail.value.trim() === '' || userMessage.value.trim() === '') {
-    alert('ERROR  Message not sent');
-  } else {
-    alert('Message sent successfully');
+function addSkillInteractions() {
+  document.querySelectorAll('.skill-card').forEach(card => {
+    card.addEventListener('click', () => {
+      // Add interactive functionality here
+      card.classList.toggle('active');
+    });
+  });
+}
+
+function setupForm() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    
+    // Add form validation and submission logic
+    if (validateForm(formData)) {
+      submitForm(formData);
+    }
+  });
+}
+
+function validateForm(formData) {
+  // Add proper validation
+  return true;
+}
+
+async function submitForm(formData) {
+  try {
+    // Replace with actual form submission logic
+    console.log('Form data:', Object.fromEntries(formData));
+    alert('Message sent successfully!');
+  } catch (error) {
+    console.error('Submission error:', error);
+    alert('Error sending message');
   }
 }
