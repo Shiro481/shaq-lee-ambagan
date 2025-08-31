@@ -73,33 +73,13 @@ function addSkillInteractions() {
   });
 }
 
-function setupForm() {
-  const form = document.querySelector('.contact-form');
-  if (!form) return;
+const contactForm = document.querySelector('.contact-form');
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    
-    // Add form validation and submission logic
-    if (validateForm(formData)) {
-      submitForm(formData);
-    }
-  });
-}
-
-function validateForm(formData) {
-  // Add proper validation
-  return true;
-}
-
-async function submitForm(formData) {
-  try {
-    // Replace with actual form submission logic
-    console.log('Form data:', Object.fromEntries(formData));
-    alert('Message sent successfully!');
-  } catch (error) {
-    console.error('Submission error:', error);
-    alert('Error sending message');
-  }
-}
+contactForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.querySelector('.js-name-input').value;
+  const email = document.querySelector('.js-email-input').value;
+  const message = document.querySelector('.js-message-input').value;
+  alert(`Thank you ${name} for your message!`);
+  console.log(name, email, message);
+})
