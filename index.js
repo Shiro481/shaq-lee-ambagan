@@ -113,6 +113,7 @@ function loadMessage(){
   const savedMessage = localStorage.getItem('allMessage');
   // Ensure we always return an array
   return savedMessage ? JSON.parse(savedMessage) : [];
+  //this is a comment
 }
 
 
