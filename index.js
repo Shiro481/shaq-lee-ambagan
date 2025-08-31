@@ -41,7 +41,6 @@ const skillSet = [
 // Main application
 document.addEventListener('DOMContentLoaded', () => {
   renderSkills();
-  setupForm();
 });
 
 function renderSkills() {
@@ -75,11 +74,49 @@ function addSkillInteractions() {
 
 const contactForm = document.querySelector('.contact-form');
 
+let allMessage = loadMessage();
+
 contactForm.addEventListener('submit', function(e){
-  e.preventDefault();
-  const name = document.querySelector('.js-name-input').value;
-  const email = document.querySelector('.js-email-input').value;
-  const message = document.querySelector('.js-message-input').value;
-  alert(`Thank you ${name} for your message!`);
-  console.log(name, email, message);
-})
+  e.preventDefault(); 
+
+  const nameInput = document.querySelector('.js-name-input');
+  const emailInput = document.querySelector('.js-email-input');
+  const messageInput = document.querySelector('.js-message-input');
+
+  let Message = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value
+  };
+
+  // Ensure allMessage is always an array
+  if (!Array.isArray(allMessage)) {
+    allMessage = [];
+  }
+
+  allMessage.push(Message);
+  saveToStorage(allMessage);
+
+  // Clear the inputs
+  nameInput.value = '';
+  emailInput.value = '';
+  messageInput.value = '';
+
+  console.log(allMessage);
+});
+
+function saveToStorage(messages){
+  localStorage.setItem('allMessage', JSON.stringify(messages));
+}
+
+function loadMessage(){
+  const savedMessage = localStorage.getItem('allMessage');
+  // Ensure we always return an array
+  return savedMessage ? JSON.parse(savedMessage) : [];
+}
+
+
+
+
+
+
