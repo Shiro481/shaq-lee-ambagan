@@ -15,7 +15,7 @@ function displayMessages(allMessage){
         messageDiv.innerHTML = `
         <p><span class="message-span">Name:</span> ${message.name}</p>
         <p><span class="message-span">Email:</span> ${message.email}</p>
-        <p><span class="message-span">Message:</span> ${message.message}</p>
+        <p><span class="message-span">Message:</span> <br>${message.message}</p>
         `
 
         const deleteBtn = document.createElement('button');
@@ -53,5 +53,6 @@ window.addEventListener('storage', function(event) {
     if (event.key === 'allMessage') {
         const updatedMessages = loadMessages();
         displayMessages(updatedMessages);
+        alert("you have a new message");
     }
 });
