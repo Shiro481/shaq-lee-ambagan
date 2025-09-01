@@ -74,11 +74,14 @@ function addSkillInteractions() {
 
 const contactForm = document.querySelector('.contact-form');
 
-let allMessage = loadMessage();
+
+
 
 contactForm.addEventListener('submit', function(e){
   e.preventDefault(); 
 
+  let allMessage = loadMessage();
+  
   const nameInput = document.querySelector('.js-name-input');
   const emailInput = document.querySelector('.js-email-input');
   const messageInput = document.querySelector('.js-message-input');
@@ -96,7 +99,7 @@ contactForm.addEventListener('submit', function(e){
 
   allMessage.push(Message);
   saveToStorage(allMessage);
-
+  alert("Thank you " + nameInput.value + " for your message!");
   // Clear the inputs
   nameInput.value = '';
   emailInput.value = '';

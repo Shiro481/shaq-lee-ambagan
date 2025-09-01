@@ -2,6 +2,7 @@
 
 
 let allMessage = loadMessages();
+saveMessages(allMessage);
 displayMessages(allMessage);
 
 
@@ -12,9 +13,9 @@ function displayMessages(allMessage){
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message-content');
         messageDiv.innerHTML = `
-        <p>Name: ${message.name}</p>
-        <p>Email: ${message.email}</p>
-        <p>Message: ${message.message}</p>
+        <p><span class="message-span">Name:</span> ${message.name}</p>
+        <p><span class="message-span">Email:</span> ${message.email}</p>
+        <p><span class="message-span">Message:</span> ${message.message}</p>
         `
 
         const deleteBtn = document.createElement('button');

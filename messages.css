@@ -1,10 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    margin-bottom: 16px;
+}
+
+
+
 .message-content{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 16px;
-    background-color: aqua;
+    background-color: rgb(46, 46, 46);
+    padding: 16px;
+    border-radius: 16px;
 }
 
 .messages-container{
@@ -13,5 +33,22 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background-color: blue;
+   
+}
+
+.messages-container p{
+    color: white;
+}
+
+.message-span{
+    font-weight: bold;
+    color: #0CB263;
+}
+
+.delete-btn{
+    padding: 8px 16px;
+    background-color: #0CB263;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
 }
