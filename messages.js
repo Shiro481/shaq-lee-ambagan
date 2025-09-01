@@ -48,3 +48,10 @@ function loadMessages(){
 function saveMessages(allMessage){
     localStorage.setItem('allMessage', JSON.stringify(allMessage));
 }
+
+window.addEventListener('storage', function(event) {
+    if (event.key === 'allMessage') {
+        const updatedMessages = loadMessages();
+        displayMessages(updatedMessages);
+    }
+});
